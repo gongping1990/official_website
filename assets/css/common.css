@@ -187,80 +187,13 @@ header {
   background-size: 100%;
 }
 /**css初始化**/
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-blockquote,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-pre,
-form,
-fieldset,
-legend,
-button,
-input,
-textarea,
-th,
-td,
-menu,
-nav,
-header {
-  margin: 0;
-  padding: 0;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 12px;
-  font-weight: normal;
-}
-ul,
-ol {
-  list-style: none;
-}
-img {
-  display: block;
-  border: 0 none;
-}
-input {
-  font-family: 'SimSun', '宋体';
-  border: 0 none;
-  outline-style: none;
-}
-textarea {
-  resize: none;
-}
-.clearfix:after {
-  content: '';
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-  display: block;
-  clear: both;
-}
-.clearfix {
-  zoom: 1;
-} /*针对ie低级版本的浏览器*/
-body {
-  font-size: 12px;
-  font-family: 'San Francisco', 'Helvetica Neue', 'PingHei', 'Hiragino Sans GB',
-    'Microsoft Yahei', 'Arial Unicode MS', 'Arial', 'Verdana', 'SimHei',
-    'Geneva', 'sans-serif';
-}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,menu,nav,header{ margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6{ font-size:12px; font-weight:normal;}
+ul,ol{list-style: none;}
+img{display: block; border:0 none;}
+input {  font-family: "SimSun","宋体"; border:0 none; outline-style:none;}
+textarea { resize:none; }
+.clearfix:after{content:''; height:0; line-height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{zoom:1;} /*针对ie低级版本的浏览器*/
+body {font-size:12px;font-family: "San Francisco", "Helvetica Neue", "PingHei", "Hiragino Sans GB","Microsoft Yahei","Arial Unicode MS", "Arial", "Verdana", "SimHei","Geneva","sans-serif";}

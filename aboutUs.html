@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>关于我们</title>
+  <title>乐小狮官网</title>
 
   <!-- Bootstrap -->
   <link href="./assets/css/bootstrap.css" rel="stylesheet">
@@ -21,10 +21,10 @@
 <body>
 <div class="p-about container-fluid">
   <header>
-    <div class="w-1200">
-      <img class="logo" src="">
-      <div class="nav">
-        <a href="" class="nav-item">首页</a>
+    <div class="nav clearfix w-1200">
+      <img class="logo" src="./assets/image/home/logo.png"/>
+      <div class="nav-list">
+        <a href="" class="nav-item active">首页</a>
         <a href="" class="nav-item">同步轻作文</a>
         <a href="" class="nav-item">每日古诗词</a>
         <a href="" class="nav-item">媒体报道</a>
@@ -32,62 +32,141 @@
     </div>
   </header>
   <div class="p-about-content">
-    <img class="-content-img" src="assets/img/about/banner.png">
+    <img class="-content-img" src="">
     <div class="-content-center row">
       <div class="-center-left col-md-4">
-        <div class="-center-left-nav -center-left-active">关于我们</div>
-        <div class="-center-left-nav">联系我们</div>
-        <div class="-center-left-nav">用户协议</div>
+        <div id="about" class="-center-left-nav" onclick="clickType(1)">关于我们</div>
+        <div id="contact" class="-center-left-nav" onclick="clickType(2)">联系我们</div>
+        <div id="user" class="-center-left-nav" onclick="clickType(3)">用户协议</div>
       </div>
       <div class="-center-right col-md-8">
-        <div class="-center-right-bigTitle">公司简介</div>
-        <div class="-center-right-text">
-          玖桔科技旗下果实小程序，是致力于打造新媒体+名校+培训机构+网红名师的工具型小程序平台，以技术
-          实力一站式提供教育垂直领取的信息化智能工具，以数据实力提供精准化音效服务方案，以丰厚的资源实
-          力提供全平台渠道支持的互联网企业。
-        </div>
-        <div class="-center-right-bigTitle">公司使命</div>
-        <div class="-center-right-text">让一亿孩子享受个性而有质量的教育</div>
-        <div class="-center-right-bigTitle">创始人简介</div>
-        <div class="-center-right-text">
-          玖桔科技旗下果实小程序，是致力于打造
-          新媒体+名校+培训机构+网红名师的工具型小程序平台，
-          以技术实力一站式提供教育垂直领取的信息化智能工具，以数据实力提供精准化音效服务方案，
-          以丰厚的资源实力提供全平台渠道支持的互联网企业。
-        </div>
-        <div class="-center-right-bigTitle">大事记</div>
-        <div class="-center-right-bigTitle">融资情况</div>
-        <div class="-center-right-text">至今公司已获得新榜，喜马拉雅，微影资本，真格基金，高榕资本等一线投资机构数百万人民币投资</div>
-        <div class="-center-right-bigTitle">投资方介绍</div>
-        <div class="-center-right-smallTitle">新榜</div>
-        <div class="-center-right-text -center-right-smallText">
-          是中国领先的内容产业服务平台，新榜以内容营销服务，
-          内容创业服务，内容数据服务三大产品服务为业务主体，充分聚合KOL自媒体的能量，为品牌主，媒体主，平
-          台等多方提供内容商业枢纽服务。投资项目有小鹅通，靠谱好物等。
-        </div>
-        <div class="-center-right-smallTitle">微影资本</div>
-        <div class="-center-right-text -center-right-smallText">
-          是微影时代旗下的投资机构，基金规模超40亿元，微影资本将同时针对电影，演出展览，体育三大领域的泛娱乐内容进行项目投资，以及针对原创内容，制作与发行营销，场馆等全产业链进行股权投资。投资项目有十点读书，凯叔讲故事等
-          。。。
-        </div>
-        <div class="-center-right-smallTitle">喜马拉雅文化基金</div>
-        <div class="-center-right-text -center-right-smallText">
-          是微影时代旗下的投资机构，基金规模超40亿元，微影资本将同时针对电影，演出展览，体育三大领域的泛娱乐内容进行项目投资，以及针对原创内容，制作与发行营销，场馆等全产业链进行股权投资。
-        </div>
-        <div class="-center-right-smallTitle">真格基金</div>
-        <div class="-center-right-text -center-right-smallText">
-          是由徐小平，王强先生于2011年联合红杉资本中国基金创立的早期投资机构。投资项目有VIPKID，小红书，聚美优品等
+        <div id="aboutText">
+          <div class="-center-right-bigTitle">公司简介</div>
+          <div class="-center-right-text">
+            玖桔科技旗下果实小程序，是致力于打造新媒体+名校+培训机构+网红名师的工具型小程序平台，以技术
+            实力一站式提供教育垂直领取的信息化智能工具，以数据实力提供精准化音效服务方案，以丰厚的资源实
+            力提供全平台渠道支持的互联网企业。
+          </div>
+          <div class="-center-right-bigTitle">公司使命</div>
+          <div class="-center-right-text">让一亿孩子享受个性而有质量的教育</div>
+          <div class="-center-right-bigTitle">创始人简介</div>
+          <div class="-center-right-text">
+            玖桔科技旗下果实小程序，是致力于打造
+            新媒体+名校+培训机构+网红名师的工具型小程序平台，
+            以技术实力一站式提供教育垂直领取的信息化智能工具，以数据实力提供精准化音效服务方案，
+            以丰厚的资源实力提供全平台渠道支持的互联网企业。
+          </div>
+          <div class="-center-right-bigTitle">大事记</div>
+          <img class="-center-right-imgOne" src="assets/img/about/img1.png">
+          <div class="-center-right-bigTitle">融资情况</div>
+          <div class="-center-right-text">至今公司已获得新榜，喜马拉雅，微影资本，真格基金，高榕资本等一线投资机构数百万人民币投资</div>
+          <img class="-center-right-img" src="assets/img/about/logo.png">
+          <div class="-center-right-bigTitle">投资方介绍</div>
+          <div class="-center-right-smallTitle">新榜</div>
+          <div class="-center-right-text -center-right-smallText">
+            是中国领先的内容产业服务平台，新榜以内容营销服务，
+            内容创业服务，内容数据服务三大产品服务为业务主体，充分聚合KOL自媒体的能量，为品牌主，媒体主，平
+            台等多方提供内容商业枢纽服务。投资项目有小鹅通，靠谱好物等。
+          </div>
+          <div class="-center-right-smallTitle">微影资本</div>
+          <div class="-center-right-text -center-right-smallText">
+            是微影时代旗下的投资机构，基金规模超40亿元，微影资本将同时针对电影，演出展览，体育三大领域的泛娱乐内容进行项目投资，以及针对原创内容，制作与发行营销，场馆等全产业链进行股权投资。投资项目有十点读书，凯叔讲故事等
+            。。。
+          </div>
+          <div class="-center-right-smallTitle">喜马拉雅文化基金</div>
+          <div class="-center-right-text -center-right-smallText">
+            是微影时代旗下的投资机构，基金规模超40亿元，微影资本将同时针对电影，演出展览，体育三大领域的泛娱乐内容进行项目投资，以及针对原创内容，制作与发行营销，场馆等全产业链进行股权投资。
+          </div>
+          <div class="-center-right-smallTitle">真格基金</div>
+          <div class="-center-right-text -center-right-smallText">
+            是由徐小平，王强先生于2011年联合红杉资本中国基金创立的早期投资机构。投资项目有VIPKID，小红书，聚美优品等
 
+          </div>
+          <div class="-center-right-smallTitle">高榕资本</div>
+          <div class="-center-right-text -center-right-smallText">
+            是中国最活跃的风险投资机构之一，致力于发现优秀创业者，与他们共建长期价值投资项目有毒APP，虎牙直播，拼多多等
+          </div>
         </div>
-        <div class="-center-right-smallTitle">高榕资本</div>
-        <div class="-center-right-text -center-right-smallText">
-          是中国最活跃的风险投资机构之一，致力于发现优秀创业者，与他们共建长期价值投资项目有毒APP，虎牙直播，拼多多等
+        <div id="userText">
+          <div class="-center-right-bigTitle">乐小狮课程报名协议</div>
+          <div class="-center-right-text -center-right-smallText">
+            本协议中，“甲方”是指“陕西玖桔教育科技有限公司”，“乙方”是指购买甲方课程的自然人。
+            乙方一经支付乐小狮在线课程费用即视为乙方已理解并接受本协议。
+          </div>
+          <div class="-center-right-smallTitle">第一部分课程信息和服务</div>
+          <div class="-center-right-text -center-right-smallText">
+            <p>1、甲方将根据学员情况为其评估水平，由专业老师推荐选择，经学员及其家长同意后，确定购买，一经确定不得以任何理由更换课程。</p>
+            <p>2、课程在乙方同意激活后，除国定小长假以外（甲方具体通知），课程每天都按时进行，课程一旦开通就不接受中途请假。</p>
+            <p>3、乙方在甲方提供体验服务并由专职人员介绍后购买甲方指定课程。</p>
+            <p>4、乙方在支付相应费用后90天内激活账号，超过约定时间未激活，甲方默认激活。</p>
+            <p>5、乙方可在甲方为其激活课程后使用账号密码登录线上平台进行系统学习。</p>
+            <p>6、甲方为学员提供写字在线视频教学服务，学习时间，地点，时长均不限。学员完成练习后把练习作业拍成照片按指定方式提交作业。</p>
+            <p>7、课程有效期是按照购买约定时长（例如：半年课程，一年课程，从课程激活之日计算时间），乙方学员必须在有效期内完成相应课程的学习。</p>
+            <p>8、甲方在乙方的使用账号页面设置有效期提示，学员未能在有效期内登录平台进行提交作业的，甲方不再为乙方课程延时。</p>
+          </div>
+          <div class="-center-right-smallTitle">第二部分双方的权利义务</div>
+          <div class="-center-right-text -center-right-smallText">
+            <p>一，甲方的权利和义</p>
+            <p>1、在保证培训质量的前提下,甲方有权改进、调整变更其培训服务、课程安排或老师安排等其它事项，并将上述任何变更通过网站或其他方式及时通知乙方。</p>
+            <p>2、甲方应根据乙方提出的要求,在约定范围内提供相应技术支持服务。</p>
+            <p>二，乙方的权利和义务</p>
+            <p>1、乙方监护人需在课程开通之日按甲方要求监督学员按要求完成课程学习，保质保量完成每日作业。</p>
+            <p>2、乙方应妥善保管其课程账户和密码，不得出售、转借或用于其它商业目的。</p>
+            <p>3、乙方及学员在课程学习期内,如遇有任何问题,可以随时与甲方的工作人员取得联系，乙方有权对甲方的课程服务提出意见。</p>
+            <p>4、乙方及学员不得影响甲方网站的正常运营，不得影响课程进程及其他学员的学习活动；不得发布不实言论损害甲方或甲方员工的名誉。</p>
+          </div>
+          <div class="-center-right-smallTitle">第三部分保密规范</div>
+          <div class="-center-right-text -center-right-smallText">
+            <p>
+              1、甲方为培训课程所制作的全部资料，在教学过程中产生的全部资料，甲方网站上所显示，使用或提供的软件，程序及内容，未经甲方同意，乙方及学员在任何时候均不得以商业目的对上述资料进行利用;以任何方式翻译，复制，传播，编辑上述资料;以及将上述资料透露给任何第三方。</p>
+            <p>
+              2、乙方同意在乙方学员参与的培训课程中，或乙方及学员参与甲方组织，举办的所有活动中，甲方可以进行拍照，摄像，录音，录像等记录活动。甲方对上述记录活动过程中所产生的作品，录音录像制品等单独地享有全部，完整的知识产权。</p>
+            <p>
+              3、甲方同意依法为乙方及学员的个人信息采取严格的保密措施。未经乙方同意，甲方不得将上述包含乙方及学员肖像或者显示个人身份的其他个人信息进行公开地商业使用。仅当以下情况之一发生时，甲方可以对乙方的肖像，姓名等个人信息进行合理使用，甲方无须再单独取得乙方同意，也无须向乙方支付任何费用，乙方及学员的肖像，姓名等合法民事权益，已被明确放弃。为甲方内部的展示使用需要，包括单不限于在内部会议中展示，将相关资料作为历史档案存留于甲方档案库或者服务器上等。</p>
+            <p>4、乙方应妥善保管其课程账户和密码，不得出售，转借或用于其它商业目的。</p>
+            <p>5、乙方及学员在课程学习期内，如遇有任何问题，可以随时与甲方的工作人员取得联系，乙方有权对甲方的课程服务提出意见。</p>
+            <p>6、乙方及学员不得影响甲方网站的正常运营，不得影响课程进程及其他学员的学习活动;不得发布不实言论损害甲方或甲方员工的名誉。</p>
+          </div>
+          <div class="-center-right-smallTitle">第四部分法律证据和争议解决</div>
+          <div class="-center-right-text -center-right-smallText">
+            <p>1、本协议的定理，执行和解释及争议的解决均应适用于中华人民共和国法律。</p>
+            <p>2、协议中未尽事宜，如有任何争议，双方应当尽量友好协商解决。协商不成，双方同意将争议提交至甲方所在地仲裁机构裁决。</p>
+            <p>
+              3、甲方同意依法为乙方及学员的个人信息采取严格的保密措施。未经乙方同意，甲方不得将上述包含乙方及学员肖像或者显示个人身份的其他个人信息进行公开地商业使用。仅当以下情况之一发生时，甲方可以对乙方的肖像，姓名等个人信息进行合理使用，甲方无须再单独取得乙方同意，也无须向乙方支付任何费用，乙方及学员的肖像，姓名等合法民事权益，已被明确放弃。为甲方内部的展示使用需要，包括单不限于在内部会议中展示，将相关资料作为历史档案存留于甲方档案库或者服务器上等。</p>
+            <p>4、乙方应妥善保管其课程账户和密码，不得出售，转借或用于其它商业目的。</p>
+            <p>5、乙方及学员在课程学习期内，如遇有任何问题，可以随时与甲方的工作人员取得联系，乙方有权对甲方的课程服务提出意见。</p>
+            <p>6、乙方及学员不得影响甲方网站的正常运营，不得影响课程进程及其他学员的学习活动;不得发布不实言论损害甲方或甲方员工的名誉。</p>
+          </div>
+        </div>
+        <div id="contactText">
+          <div class="-center-right-address"></div>
+          <p class="-center-right-bigTitle">联系我们</p>
+          <p class="-center-right-info">邮箱：</p>
+          <p class="-center-right-info">商务合作：</p>
+          <p class="-center-right-info">热线电话：</p>
+          <p class="-center-right-info">地址：</p>
         </div>
       </div>
     </div>
   </div>
-  <footer>
-
+  <footer class="footer">
+    <div class="clearfix w-1200">
+      <div class="footer-left fl">
+        <div class="footer-nav">
+          <a href="aboutUs.html?type=1">关于我们</a>
+          <a href="aboutUs.html?type=2">联系我们</a>
+          <a href="aboutUs.html?type=3">用户协议</a>
+        </div>
+        <address>
+          陕西玖桔教育科技有限公司（ICP 陕B2-2032434300） 陕西公网安备
+          33011002014018号
+        </address>
+      </div>
+      <div class="footer-right fr">
+        <p>微信公众号</p>
+        <img class="qrcode" src=""/>
+      </div>
+    </div>
   </footer>
 </div>
 
@@ -96,5 +175,62 @@
 <script src="./assets/js/jquery.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="./assets/js/bootstrap.js"></script>
+<script>
+  init()
+
+  function init() {
+    var param = getUrlParam('type')
+    $("#aboutText").hide()
+    $("#contactText").hide()
+    $("#userText").hide()
+    console.log(param, '参数')
+    clickType(param)
+  }
+
+  function getUrlParam(name) {
+
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+
+    if (r != null) return unescape(r[2]);
+
+    return null; //返回参数值
+
+  }
+
+  function clickType(num) {
+    switch (+num) {
+      case 1:
+        $("#about").addClass('-center-left-active')
+        $("#contact").removeClass('-center-left-active')
+        $("#user").removeClass('-center-left-active')
+        $(".-content-img").attr('src', 'assets/img/about/banner.png')
+        $("#aboutText").show()
+        $("#contactText").hide()
+        $("#userText").hide()
+        break
+      case 2:
+        $("#about").removeClass('-center-left-active')
+        $("#user").removeClass('-center-left-active')
+        $("#contact").addClass('-center-left-active')
+        $(".-content-img").attr('src', 'assets/img/about/banner2.png')
+        $("#aboutText").hide()
+        $("#contactText").show()
+        $("#userText").hide()
+        break
+      case 3:
+        $("#user").addClass('-center-left-active')
+        $("#about").removeClass('-center-left-active')
+        $("#contact").removeClass('-center-left-active')
+        $(".-content-img").attr('src', 'assets/img/about/banner1.png')
+        $("#aboutText").hide()
+        $("#contactText").hide()
+        $("#userText").show()
+        break
+
+    }
+  }
+</script>
 </body>
 </html>

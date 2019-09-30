@@ -1,7 +1,97 @@
-.w-1200 {
-  width: 1200px;
+.banner {
+  width: 100%;
 }
 
-header {
-  width: 
+.banner img {
+  width: 100%;
+}
+
+.content-item {
+  padding-top: 1px;
+  height: 699px;
+}
+
+.poem-text {
+  padding-top: 166px;
+  padding-left: 67px;
+}
+
+.poem-img {
+  width: 584px;
+}
+
+.poem .item-right {
+  padding-top: 87px;
+}
+
+.composition {
+  background-color: #f6f6f9;
+}
+
+.composition-img {
+  padding-top: 65px;
+}
+
+.composition-text {
+  padding-top: 167px;
+  padding-left: 223px;
+}
+
+.title {
+  font-size: 48px;
+  color: #333333;
+  font-weight: 800;
+  margin-bottom: 26px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 26px;
+  color: #bebacc;
+  margin-bottom: 45px;
+}
+
+.text-list p {
+  font-size: 18px;
+  color: #333333;
+  line-height: 33px;
+}
+
+.text-list p span {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  width: 27px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.icon1 {
+  background-image: url('../image/home/1.png');
+}
+.icon2 {
+  background-image: url('../image/home/2.png');
+}
+.icon3 {
+  background-image: url('../image/home/3.png');
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 102px;
+  width: 243px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-family: PingFang;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  line-height: 60px;
+  background: rgba(254, 117, 13, 1);
+  box-shadow: 2px 18px 20px 0px rgba(254, 117, 13, 0.3);
+  border-radius: 30px;
 }

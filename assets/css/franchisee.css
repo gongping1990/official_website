@@ -1,0 +1,33 @@
+.p-franchisee {
+    position: relative;
+}
+.p-franchisee-img {
+    width: 100%;
+}
+
+.p-franchisee-btn {
+    cursor: pointer;
+    text-align: center;
+    font-size:48px;
+    font-weight:normal;
+    color:rgba(255,255,255,1);
+    width:387px;
+    height:113px;
+    line-height: 113px;
+    background:linear-gradient(0deg,rgba(252,151,43,1),rgba(254,104,13,1));
+    box-shadow:0px 16px 0px 0px rgba(235,99,16,0.57), 0px 8px 9px 0px rgba(255,238,157,0.26);
+    border-radius:57px;
+}
+
+.-top {
+    position: absolute;
+    top: 536px;
+    left: 397px;
+}
+
+.-down {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

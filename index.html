@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
+    <title>乐小狮官网</title>
 
     <!-- Bootstrap -->
     <link
@@ -55,7 +55,7 @@
                 <span>北师大硕博名师团队研发</span>
               </p>
             </div>
-            <div class="button">
+            <div class="button" onclick="openModel(1)">
               立即报名
             </div>
           </div>
@@ -90,7 +90,7 @@
                 </span>
               </p>
             </div>
-            <div class="button">
+            <div class="button" onclick="openModel(2)">
               立即报名
             </div>
           </div>
@@ -116,9 +116,33 @@
         </div>
       </div>
     </footer>
+    <div id="QrcodeModel" class="study-popup hide" onclick="closeModal()">
+      <div class="study-popup-bg"></div>
+    </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="./assets/js/jquery.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="./assets/js/bootstrap.js"></script>
+  <script>
+    init()
+
+    function init() {
+      closeModal()
+    }
+
+   function closeModal () {
+     $("#QrcodeModel").addClass('hide')
+   }
+
+   function openModel(type) {
+     $("#QrcodeModel").removeClass('hide')
+     switch (+type) {
+       case 1:
+         break
+       case 2:
+         break
+     }
+   }
+  </script>
   </body>
 </html>

@@ -44,6 +44,14 @@
   line-height:36px;
 }
 
+.-content-center .-center-right .-center-right-imgOne {
+    margin-bottom: 87px;
+}
+
+.-content-center .-center-right .-center-right-img {
+    transform: translateY(-67px);
+}
+
 .-content-center .-center-right .-center-right-smallTitle {
   margin-bottom: 21px;
   height:23px;

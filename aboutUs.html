@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>关于我们</title>
+  <title>乐小狮官网</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,10 +21,10 @@
 <body>
 <div class="p-about container-fluid">
   <header>
-    <div class="w-1200">
-      <img class="logo" src="">
-      <div class="nav">
-        <a href="" class="nav-item">首页</a>
+    <div class="nav clearfix w-1200">
+      <img class="logo" src="./assets/image/home/logo.png" />
+      <div class="nav-list">
+        <a href="" class="nav-item active">首页</a>
         <a href="" class="nav-item">同步轻作文</a>
         <a href="" class="nav-item">每日古诗词</a>
         <a href="" class="nav-item">媒体报道</a>
@@ -57,8 +57,10 @@
             以丰厚的资源实力提供全平台渠道支持的互联网企业。
           </div>
           <div class="-center-right-bigTitle">大事记</div>
+          <img class="-center-right-imgOne" src="assets/img/about/img1.png">
           <div class="-center-right-bigTitle">融资情况</div>
           <div class="-center-right-text">至今公司已获得新榜，喜马拉雅，微影资本，真格基金，高榕资本等一线投资机构数百万人民币投资</div>
+          <img class="-center-right-img" src="assets/img/about/logo.png">
           <div class="-center-right-bigTitle">投资方介绍</div>
           <div class="-center-right-smallTitle">新榜</div>
           <div class="-center-right-text -center-right-smallText">
@@ -85,7 +87,7 @@
             是中国最活跃的风险投资机构之一，致力于发现优秀创业者，与他们共建长期价值投资项目有毒APP，虎牙直播，拼多多等
           </div>
         </div>
-        <div id="contactText">
+        <div id="userText">
           <div class="-center-right-bigTitle">乐小狮课程报名协议</div>
           <div class="-center-right-text -center-right-smallText">
             本协议中，“甲方”是指“陕西玖桔教育科技有限公司”，“乙方”是指购买甲方课程的自然人。
@@ -132,7 +134,7 @@
             <p>6、乙方及学员不得影响甲方网站的正常运营，不得影响课程进程及其他学员的学习活动;不得发布不实言论损害甲方或甲方员工的名誉。</p>
           </div>
         </div>
-        <div id="userText">
+        <div id="contactText">
           <div class="-center-right-address"></div>
           <p class="-center-right-bigTitle">联系我们</p>
           <p class="-center-right-info">邮箱：</p>
@@ -143,8 +145,24 @@
       </div>
     </div>
   </div>
-  <footer>
-
+  <footer class="footer">
+    <div class="clearfix w-1200">
+      <div class="footer-left fl">
+        <div class="footer-nav">
+          <a href="aboutUs.html?type=1">关于我们</a>
+          <a href="aboutUs.html?type=2">联系我们</a>
+          <a href="aboutUs.html?type=3">用户协议</a>
+        </div>
+        <address>
+          陕西玖桔教育科技有限公司（ICP 陕B2-2032434300） 陕西公网安备
+          33011002014018号
+        </address>
+      </div>
+      <div class="footer-right fr">
+        <p>微信公众号</p>
+        <img class="qrcode" src="" />
+      </div>
+    </div>
   </footer>
 </div>
 
@@ -157,13 +175,28 @@
   init()
 
   function init() {
-    $("#about").addClass('-center-left-active')
-    $("#aboutText").show()
-    $(".-content-img").attr('src', 'assets/img/about/banner.png')
+    var param = getUrlParam('type')
+    $("#aboutText").hide()
+    $("#contactText").hide()
+    $("#userText").hide()
+    console.log(param,'参数')
+    clickType(param)
+  }
+
+  function getUrlParam(name) {
+
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+
+    if (r != null) return unescape(r[2]);
+
+    return null; //返回参数值
+
   }
 
   function clickType(num) {
-    switch (num) {
+    switch (+num) {
       case 1:
         $("#about").addClass('-center-left-active')
         $("#contact").removeClass('-center-left-active')
@@ -174,23 +207,24 @@
         $("#userText").hide()
         break
       case 2:
-        $("#contact").addClass('-center-left-active')
         $("#about").removeClass('-center-left-active')
         $("#user").removeClass('-center-left-active')
-        $(".-content-img").attr('src', 'assets/img/about/banner1.png')
+        $("#contact").addClass('-center-left-active')
+        $(".-content-img").attr('src', 'assets/img/about/banner2.png')
         $("#aboutText").hide()
         $("#contactText").show()
         $("#userText").hide()
         break
       case 3:
+        $("#user").addClass('-center-left-active')
         $("#about").removeClass('-center-left-active')
         $("#contact").removeClass('-center-left-active')
-        $("#user").addClass('-center-left-active')
-        $(".-content-img").attr('src', 'assets/img/about/banner2.png')
+        $(".-content-img").attr('src', 'assets/img/about/banner1.png')
         $("#aboutText").hide()
         $("#contactText").hide()
         $("#userText").show()
         break
+
     }
   }
 </script>

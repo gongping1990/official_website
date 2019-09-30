@@ -63,3 +63,17 @@
   font-weight:400;
   color:rgba(102,102,102,1);
 }
+.-content-center .-center-right .-center-right-address {
+  margin-bottom: 60px;
+  width:841px;
+  height:354px;
+  background:rgba(0,0,0,1);
+}
+.-content-center .-center-right .-center-right-info {
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.-content-center .-center-right .-center-right-info:last-child {
+  margin-bottom: 50px
+}

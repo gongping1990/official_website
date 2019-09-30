@@ -11,10 +11,7 @@
     <title>乐小狮官网</title>
 
     <!-- Bootstrap -->
-    <link
-      href="./assets/css/bootstrap.css"
-      rel="stylesheet"
-    />
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
@@ -123,26 +120,26 @@
     <script src="./assets/js/jquery.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="./assets/js/bootstrap.js"></script>
-  <script>
-    init()
+    <script>
+      init()
 
-    function init() {
-      closeModal()
-    }
+      function init() {
+        closeModal()
+      }
 
-   function closeModal () {
-     $("#QrcodeModel").addClass('hide')
-   }
+      function closeModal() {
+        $('#QrcodeModel').addClass('hide')
+      }
 
-   function openModel(type) {
-     $("#QrcodeModel").removeClass('hide')
-     switch (+type) {
-       case 1:
-         break
-       case 2:
-         break
-     }
-   }
-  </script>
+      function openModel(type) {
+        $('#QrcodeModel').removeClass('hide')
+        switch (+type) {
+          case 1:
+            break
+          case 2:
+            break
+        }
+      }
+    </script>
   </body>
 </html>

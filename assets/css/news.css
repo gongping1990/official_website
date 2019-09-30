@@ -1,3 +1,14 @@
+.banner {
+  position: relative;
+  height: 340px;
+}
+
+.banner img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
 .news-list {
   margin-top: 110px;
 }

@@ -1,0 +1,149 @@
+.banner {
+  position: relative;
+  height: 700px;
+}
+
+.banner img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.content-item {
+  margin-bottom: 1px;
+  padding-top: 65px;
+}
+
+.item-img img {
+  width: 666px;
+}
+
+.item-text {
+  padding-top: 95px;
+}
+.title {
+  margin-bottom: 48px;
+  font-size: 48px;
+  list-style: 50px;
+  font-weight: 500;
+  color: #333;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  color: #666;
+}
+
+.kcjc {
+  padding-left: 37px;
+}
+.text-list > div {
+  margin-bottom: 21px;
+}
+
+.text-list p {
+  font-size: 18px;
+  color: #666;
+  line-height: 33px;
+}
+
+.text-list p span {
+  display: inline-block;
+}
+
+.text-info p {
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+.text-info span {
+  font-size: 18px;
+  color: #666666;
+}
+
+.icon {
+  margin-right: 14px;
+  display: inline-block;
+  width: 27px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.icon1 {
+  background-image: url('../image/home/1.png');
+}
+.icon2 {
+  background-image: url('../image/home/2.png');
+}
+.icon3 {
+  background-image: url('../image/home/3.png');
+}
+.icon4 {
+  background-image: url('../image/composition/icon4.png');
+}
+.icon5 {
+  background-image: url('../image/composition/icon5.png');
+}
+.icon6 {
+  background-image: url('../image/composition/icon6.png');
+}
+
+.lesson {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 82px;
+  background-color: #f6f6f9;
+}
+
+.lesson-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 66px;
+  text-align: center;
+  width: 640px;
+  height: 120px;
+  font-size: 48px;
+  line-height: 120px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 192, 0, 1);
+  box-shadow: 2px 18px 20px 0px rgba(255, 192, 0, 0.3);
+  border-radius: 58px;
+}
+
+.lesson-btn:hover {
+  color: #fff;
+}
+
+.textbook {
+  padding-bottom: 120px;
+}
+
+.sk {
+  padding-top: 1px;
+  background-color: #f6f6f9;
+}
+
+.cr {
+  padding-top: 240px;
+  padding-bottom: 86px;
+}
+
+.fk {
+  position: relative;
+  height: 1379px;
+}
+
+.fk img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}

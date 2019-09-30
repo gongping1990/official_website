@@ -29,6 +29,11 @@ p {
   width: 1200px;
 }
 
+.w-1120 {
+  margin: 0 auto;
+  width: 1120px;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -51,6 +56,10 @@ header {
 .nav {
   padding-top: 18px;
   padding-bottom: 19px;
+}
+
+.min-1120 {
+  min-width: 1120px;
 }
 
 .nav-item {
@@ -142,4 +151,116 @@ header {
   height: 140px;
   background: rgba(255, 255, 255, 1);
   border-radius: 10px;
+}
+
+.-title {
+  position: relative;
+  display: table;
+  margin: 120px auto;
+  margin-bottom: 97px;
+  font-size: 58px;
+  font-weight: bold;
+  color: #333333;
+}
+.-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -138px;
+  margin-top: -3.5px;
+  width: 118px;
+  height: 7px;
+  background: url('../image/composition/tiao.png') no-repeat;
+  background-size: 100%;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+.-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -138px;
+  margin-top: -3.5px;
+  width: 118px;
+  height: 7px;
+  background: url('../image/composition/tiao.png') no-repeat;
+  background-size: 100%;
+}
+/**css初始化**/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+menu,
+nav,
+header {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+  border: 0 none;
+}
+input {
+  font-family: 'SimSun', '宋体';
+  border: 0 none;
+  outline-style: none;
+}
+textarea {
+  resize: none;
+}
+.clearfix:after {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+} /*针对ie低级版本的浏览器*/
+body {
+  font-size: 12px;
+  font-family: 'San Francisco', 'Helvetica Neue', 'PingHei', 'Hiragino Sans GB',
+    'Microsoft Yahei', 'Arial Unicode MS', 'Arial', 'Verdana', 'SimHei',
+    'Geneva', 'sans-serif';
 }

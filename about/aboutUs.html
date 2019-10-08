@@ -8,9 +8,9 @@
   <title>乐小狮官网</title>
 
   <!-- Bootstrap -->
-  <link href="./assets/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/aboutUs.css">
+  <link href="../assets/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/aboutUs.css">
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
   <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
 <div class="p-about container-fluid">
   <header>
     <div class="nav clearfix w-1200">
-      <img class="logo" src="./assets/image/home/logo.png"/>
+      <img class="logo" src="../assets/image/home/logo.png"/>
       <div class="nav-list">
         <a href="/" class="nav-item">首页</a>
         <a href="/composition" class="nav-item">同步轻作文</a>
@@ -57,10 +57,10 @@
             以丰厚的资源实力提供全平台渠道支持的互联网企业。
           </div>
           <div class="-center-right-bigTitle">大事记</div>
-          <img class="-center-right-imgOne" src="assets/img/about/img1.png">
+          <img class="-center-right-imgOne" src="../assets/img/about/img1.png">
           <div class="-center-right-bigTitle">融资情况</div>
           <div class="-center-right-text">至今公司已获得新榜，喜马拉雅，微影资本，真格基金，高榕资本等一线投资机构数百万人民币投资</div>
-          <img class="-center-right-img" src="assets/img/about/logo.png">
+          <img class="-center-right-img" src="../assets/img/about/logo.png">
           <div class="-center-right-bigTitle">投资方介绍</div>
           <div class="-center-right-smallTitle">新榜</div>
           <div class="-center-right-text -center-right-smallText">
@@ -172,9 +172,9 @@
 
 
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-<script src="./assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-<script src="./assets/js/bootstrap.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
 <script>
   init()
 
@@ -205,7 +205,7 @@
         $("#about").addClass('-center-left-active')
         $("#contact").removeClass('-center-left-active')
         $("#user").removeClass('-center-left-active')
-        $(".-content-img").attr('src', 'assets/img/about/banner.png')
+        $(".-content-img").attr('src', '../assets/img/about/banner.png')
         $("#aboutText").show()
         $("#contactText").hide()
         $("#userText").hide()
@@ -214,7 +214,7 @@
         $("#about").removeClass('-center-left-active')
         $("#user").removeClass('-center-left-active')
         $("#contact").addClass('-center-left-active')
-        $(".-content-img").attr('src', 'assets/img/about/banner2.png')
+        $(".-content-img").attr('src', '../assets/img/about/banner2.png')
         $("#aboutText").hide()
         $("#contactText").show()
         $("#userText").hide()
@@ -223,7 +223,7 @@
         $("#user").addClass('-center-left-active')
         $("#about").removeClass('-center-left-active')
         $("#contact").removeClass('-center-left-active')
-        $(".-content-img").attr('src', 'assets/img/about/banner1.png')
+        $(".-content-img").attr('src', '../assets/img/about/banner1.png')
         $("#aboutText").hide()
         $("#contactText").hide()
         $("#userText").show()

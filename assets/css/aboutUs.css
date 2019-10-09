@@ -43,6 +43,15 @@
   color:rgba(51,51,51,1);
   line-height:36px;
 }
+.-content-center .-center-right .-center-right-des {
+  margin: 39px 0 28px;
+  max-width: 826px;
+  padding: 26px 33px;
+  font-size: 18px;
+  background:rgba(255,192,0,1);
+  color: #ffffff;
+  border-radius:10px;
+}
 
 .-content-center .-center-right .-center-right-imgOne {
     margin-bottom: 87px;

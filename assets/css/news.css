@@ -13,6 +13,12 @@
   margin-top: 110px;
 }
 
+.news-no-data {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 110px;
+}
+
 .news-item {
   margin-bottom: 19px;
 }

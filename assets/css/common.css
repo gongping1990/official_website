@@ -182,6 +182,12 @@ header {
   height: 359px;
 }
 
+.study-popup .study-popup-bg .-img {
+  width: 230px;
+  margin-top: 116px;
+  margin-left: 10px;
+}
+
 .-title {
   position: relative;
   display: table;

@@ -8,6 +8,7 @@
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  width: 100%;
 }
 .news-list {
   margin-top: 110px;

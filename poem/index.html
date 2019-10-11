@@ -44,6 +44,7 @@
     <div class="min-1120">
       <div class="banner">
         <img src="../assets/image/poem/banner.png" />
+        <div class="-btn" onclick="openModel()">立即报名</div>
       </div>
       <div class="content-item">
         <div class="w-1120 clearfix">
@@ -185,25 +186,25 @@
             <input id="tab1" type="radio" name="tab" checked />
             <label class="label1" for="tab1">选项一</label>
             <div class="content">
-              <img src="../assets/image/poem/lesson1.png" />
+              <img class="ma" src="../assets/image/poem/lesson1.png" />
             </div>
           </li>
           <li>
             <input id="tab2" type="radio" name="tab" />
             <label for="tab2">选项二</label>
             <div class="content">
-              <img src="../assets/image/poem/lesson2.png" />
+              <img class="ma" src="../assets/image/poem/lesson2.png" />
             </div>
           </li>
           <li>
             <input id="tab3" type="radio" name="tab" />
             <label for="tab3">选项三</label>
             <div class="content">
-              <img src="../assets/image/poem/lesson3.png" />
+              <img class="ma" src="../assets/image/poem/lesson3.png" />
             </div>
           </li>
         </ul>
-        <a href="" class="lesson-btn">报名查看更多课程</a>
+        <div class="lesson-btn" onclick="openModel()">报名查看更多课程</div>
       </div>
       <div class="textbook min-1120">
         <p class="-title">
@@ -276,9 +277,26 @@
         </div>
       </div>
     </footer>
+
+    <div id="QrcodeModel" class="study-popup hide" onclick="closeModal()">
+      <div class="study-popup-bg">
+        <img class="-img" id="modalImg" src="" />
+      </div>
+    </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="../assets/js/jquery.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="../assets/js/bootstrap.js"></script>
+  <script>
+
+    function openModel() {
+      $('#QrcodeModel').removeClass('hide')
+      $('#modalImg').attr('src', '../assets/image/home/gsw.jpg')
+    }
+
+    function closeModal() {
+      $('#QrcodeModel').addClass('hide')
+    }
+  </script>
   </body>
 </html>

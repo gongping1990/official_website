@@ -194,6 +194,8 @@
 .fk {
   position: relative;
   height: 1379px;
+  min-width: 1200px;
+  overflow: hidden;
 }
 
 .fk img {

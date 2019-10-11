@@ -138,6 +138,7 @@
     font-size: 48px;
     line-height: 120px;
     font-family: PingFang SC;
+    cursor: pointer;
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
     background: rgba(255, 192, 0, 1);

@@ -1,199 +1,230 @@
 .banner {
-  position: relative;
+    position: relative;
 }
 
 .banner img {
- width: 100%;
+    width: 100%;
 }
 
 .content-item {
-  margin-bottom: 1px;
-  padding-top: 65px;
+    margin-bottom: 1px;
+    padding-top: 65px;
 }
 
 .item-img img {
-  width: 550px;
+    width: 550px;
 }
 
 .item-text {
-  padding-top: 62px;
+    padding-top: 92px;
 }
+
 .title {
-  margin-bottom: 32px;
-  font-size: 48px;
-  list-style: 50px;
-  font-weight: 500;
-  color: #333;
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 56px;
 }
+
 .subtitle {
-  font-size: 18px;
-  line-height: 22px;
-  color: #666;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666;
 }
 
 .kcjc {
-  padding-left: 46px;
+    padding-left: 46px;
 }
+
 .text-list > div {
-  margin-bottom: 21px;
+    margin-bottom: 21px;
 }
 
 .text-list p {
-  font-size: 18px;
-  color: #666;
-  line-height: 33px;
+    font-size: 18px;
+    color: #666;
+    line-height: 33px;
 }
 
 .text-list p span {
-  display: inline-block;
+    display: inline-block;
 }
 
 .text-info p {
-  margin-bottom: 16px;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #333;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 30px;
+    color: #333;
 }
 
 .text-info span {
-  font-size: 18px;
-  color: #666666;
+    display: inline-block;
+    max-width: 526px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    line-height: 32px;
 }
 
 .icon {
-  margin-right: 14px;
-  display: inline-block;
-  width: 27px;
-  height: 33px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
+    margin-top: 8px;
+    margin-right: 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
 }
 
 .icon1 {
-  background-image: url('../image/home/1.png');
+    background-image: url('../image/home/1.png');
 }
+
 .icon2 {
-  background-image: url('../image/home/2.png');
+    background-image: url('../image/home/2.png');
 }
+
 .icon3 {
-  background-image: url('../image/home/3.png');
+    background-image: url('../image/home/3.png');
 }
+
 .icon4 {
-  background-image: url('../image/composition/icon4.png');
+    background-image: url('../image/composition/icon4.png');
 }
+
 .icon5 {
-  background-image: url('../image/composition/icon5.png');
+    background-image: url('../image/composition/icon5.png');
 }
+
 .icon6 {
-  background-image: url('../image/composition/icon6.png');
+    background-image: url('../image/composition/icon6.png');
 }
 
 .lesson {
-  position: relative;
-  margin-top: 173px;
-  padding-top: 1px;
-  padding-bottom: 82px;
-  background-color: #f6f6f9;
+    position: relative;
+    margin-top: 173px;
+    padding-top: 1px;
+    padding-bottom: 82px;
+    background-color: #f6f6f9;
 }
 
 .lesson-btn {
-  display: block;
-  margin: 0 auto;
-  margin-top: 66px;
-  text-align: center;
-  width: 640px;
-  height: 120px;
-  font-size: 48px;
-  line-height: 120px;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  background: rgba(255, 192, 0, 1);
-  box-shadow: 2px 18px 20px 0px rgba(255, 192, 0, 0.3);
-  border-radius: 58px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 66px;
+    text-align: center;
+    width: 640px;
+    height: 120px;
+    font-size: 48px;
+    line-height: 120px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(255, 192, 0, 1);
+    box-shadow: 2px 18px 20px 0px rgba(255, 192, 0, 0.3);
+    border-radius: 58px;
 }
 
 .lesson-btn:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .textbook {
-  padding-bottom: 120px;
+    padding-bottom: 120px;
+}
+
+.textbook .-img {
+    display: inline-block;
+    margin-right: 72px;
+}
+
+.textbook .-imgTwo {
+    margin: 55px auto 0;
 }
 
 .sk {
-  padding-top: 1px;
-  background-color: #f6f6f9;
+    padding-top: 1px;
+    background-color: #f6f6f9;
 }
 
 .cr {
-  padding-top: 240px;
-  padding-bottom: 86px;
+    padding-top: 240px;
+    padding-bottom: 86px;
 }
 
 .fk {
-  position: relative;
-  height: 1540px;
+    position: relative;
+    height: 1362px;
 }
 
 .fk img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 ul {
-  position: relative;
-  width: 1182px;
-  height: 1250px;
-  margin: 100px auto;
+    position: relative;
+    width: 1182px;
+    height: 1250px;
+    margin: 100px auto;
 }
+
 ul li {
-  list-style: none;
+    list-style: none;
 }
+
 ul li input {
-  display: none;
+    display: none;
 }
+
 ul li label {
-  float: left;
-  margin: 0 45px;
-  width: 220px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 32px;
-  color: #ffce15;
-  border: 2px solid rgba(255, 206, 21, 1);
-  box-sizing: border-box;
-  cursor: pointer;
-  border-radius: 51px;
-  transition: all 0.3s;
+    float: left;
+    margin: 0 45px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 32px;
+    color: #ffce15;
+    border: 2px solid rgba(255, 206, 21, 1);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 51px;
+    transition: all 0.3s;
 }
+
 ul li .label1 {
-  margin-left: 171px;
+    margin-left: 171px;
 }
+
 ul li input:checked + label {
-  color: #fff;
-  background-color: #ffce15;
+    color: #fff;
+    background-color: #ffce15;
 }
+
 ul li .content {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  left: 0;
-  top: 111px;
-  width: 100%;
-  color: #fff;
-  transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 111px;
+    width: 100%;
+    color: #fff;
+    transition: all 0.3s;
 }
+
 ul li input:checked ~ .content {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }

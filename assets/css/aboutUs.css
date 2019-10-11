@@ -79,10 +79,11 @@
 }
 
 .-content-center .-center-right .-center-right-address {
+    background: url("../img/about/dz.png") no-repeat;
+    background-size: 100%;
     margin-bottom: 60px;
-    width: 841px;
+    width: 730px;
     height: 354px;
-    background: rgba(0, 0, 0, 1);
 }
 
 .-content-center .-center-right .-center-right-info {

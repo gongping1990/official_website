@@ -7,18 +7,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <meta name="Keywords"
-          content="乐小狮作文课, 乐小狮大语文, 乐小狮古诗词, 少儿作文培训, 少儿写作, 小学语文,, 小学生作文方法, 在线小学写作培训, 在线作文学习, 在线兴趣辅导班, 在线作文培训班">
-    <meta name="Description"
-          content="乐小狮大语文是由知名书法家专门为5~12岁学前班、小学生打造的在线学习课程，我们提供每天只需8分钟，20年教学经验的名师制作课程，5年教学经验的老师一对一辅导的双师课程。同时还提古诗词、阅读等丰富的少儿兴趣课程。">
+    <meta
+      name="Keywords"
+      content="乐小狮作文课, 乐小狮大语文, 乐小狮古诗词, 少儿作文培训, 少儿写作, 小学语文,, 小学生作文方法, 在线小学写作培训, 在线作文学习, 在线兴趣辅导班, 在线作文培训班"
+    />
+    <meta
+      name="Description"
+      content="乐小狮大语文是由知名书法家专门为5~12岁学前班、小学生打造的在线学习课程，我们提供每天只需8分钟，20年教学经验的名师制作课程，5年教学经验的老师一对一辅导的双师课程。同时还提古诗词、阅读等丰富的少儿兴趣课程。"
+    />
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>乐小狮大语文-乐小狮同步轻作文</title>
 
     <!-- Bootstrap -->
-    <link
-      href="../assets/css/bootstrap.css"
-      rel="stylesheet"
-    />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/common.css" />
     <link rel="stylesheet" href="../assets/css/composition.css" />
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
@@ -42,7 +43,10 @@
     </header>
     <div class="container-fluid">
       <div class="banner">
-        <img src="../assets/image/composition/banner.png" />
+        <div class="img">
+          <img src="../assets/image/composition/banner.png" />
+          <div class="-btn" onclick="openModel()">立即购课</div>
+        </div>
       </div>
       <div class="content-item">
         <div class="w-1200 clearfix">
@@ -52,7 +56,7 @@
               src="../assets/image/composition/item1.png"
             />
           </div>
-          <div class="item-right fl">
+          <div class="item-right fl item-text">
             <p class="title">写作从此更轻松</p>
             <div class="text-list">
               <div class="clearfix">
@@ -82,7 +86,7 @@
       </div>
       <div class="content-item">
         <div class="w-1200 clearfix">
-          <div class="item-left fl item-text" style="padding-top: 110px">
+          <div class="item-left fl" style="padding-top: 60px">
             <p class="title">写作上的“三座大山”</p>
             <div class="text-list">
               <div class="clearfix">
@@ -121,7 +125,7 @@
               src="../assets/image/composition/item3.png"
             />
           </div>
-          <div class="item-right fl item-text" style="padding-top: 118px">
+          <div class="item-right fl item-text" style="padding-top: 108px">
             <p class="title">课程效果</p>
             <div class="text-list">
               <p>
@@ -164,7 +168,7 @@
       </div>
       <div class="content-item">
         <div class="w-1200 clearfix">
-          <div class="item-left fl item-text" style="padding-top: 153px">
+          <div class="item-left fl item-text" style="padding-top: 143px">
             <p class="title">1对1名师点评</p>
             <div class="text-list">
               <p>
@@ -191,35 +195,86 @@
         </div>
       </div>
       <div class="lesson ">
-      <p class="-title">
-        课程安排(部分)
-      </p>
-      <img class="w-1120" src="../assets/image/composition/lesson.png" />
-      <a href="" class="lesson-btn">报名查看更多课程</a>
+        <p class="-title">
+          课程安排(部分)
+        </p>
+        <img class="w-1120" src="../assets/image/composition/lesson.png" />
+        <div class="lesson-btn" onclick="openModel()">报名查看更多课程</div>
+      </div>
+      <div class="textbook min-1120">
+        <p class="-title">
+          配套教材
+        </p>
+        <!--<img class="w-1120" src="../assets/image/composition/jc.png" />-->
+        <div class="w-1120 text-center">
+          <img
+            class="-img"
+            src="../assets/image/composition/ptsc-icon-class.png"
+          />
+          <img
+            class="-img"
+            src="../assets/image/composition/ptsc-icon-teacher.png"
+          />
+          <img
+            class="-img"
+            style="margin-right: 0"
+            src="../assets/image/composition/ptsc-icon-gife.png"
+          />
+
+          <div>
+            <img
+              class="-imgTwo"
+              src="../assets/image/composition/ptsc-img-gife.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="sk">
+        <p class="-title">
+          上课流程
+        </p>
+        <img class="w-1120" src="../assets/image/composition/sk.png" />
+      </div>
+      <div class="textServe min-1120">
+        <p class="-title">
+          我们承诺
+        </p>
+        <!--<img class="w-1120" src="../assets/image/composition/cr.png" />-->
+        <div class="w-1120">
+          <div class="-item-div">
+            <img
+              class="-img"
+              src="../assets/image/composition/icon-money.png"
+            />
+            <p class="-p-1 text-center">无忧退款</p>
+            <p class="-p-2 text-center">
+              对课程、老师或效果不满意，开课7天可提出退款要求
+            </p>
+          </div>
+          <div class="-item-div">
+            <img
+              class="-img"
+              src="../assets/image/composition/icon-teacher.png"
+            />
+            <p class="-p-1 text-center">服务承诺</p>
+            <p class="-p-2 text-center">
+              根据孩子学习进度进行跟踪监测，专属助教全程五星服务，为家长解读各种问题
+            </p>
+          </div>
+          <div class="-item-div" style="margin-right: 0">
+            <img class="-img" src="../assets/image/composition/icon-like.png" />
+            <p class="-p-1 text-center">师资承诺</p>
+            <p class="-p-2 text-center">
+              所有老师经过层层筛选与培训，擅长语文教育培训
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="fk">
+        <img src="../assets/image/composition/fk.png" />
+      </div>
     </div>
-    <div class="textbook">
-      <p class="-title">
-        配套教材
-      </p>
-      <img class="w-1120" src="../assets/image/composition/jc.png" />
-    </div>
-    <div class="sk">
-      <p class="-title">
-        上课流程
-      </p>
-      <img class="w-1120" src="../assets/image/composition/sk.png" />
-    </div>
-    <div class="cr">
-      <p class="-title">
-        我们承诺
-      </p>
-      <img class="w-1120" src="../assets/image/composition/cr.png" />
-    </div>
-    <div class="fk">
-      <img src="../assets/image/composition/fk.png" />
-    </div>
-    </div>
-    
+
     <footer class="footer">
       <div class="clearfix w-1200">
         <div class="footer-left fl">
@@ -239,9 +294,25 @@
         </div>
       </div>
     </footer>
+
+    <div id="QrcodeModel" class="study-popup hide" onclick="closeModal()">
+      <div class="study-popup-bg">
+        <img class="-img" id="modalImg" src="" />
+      </div>
+    </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="../assets/js/jquery.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="../assets/js/bootstrap.js"></script>
+    <script>
+      function openModel() {
+        $('#QrcodeModel').removeClass('hide')
+        $('#modalImg').attr('src', '../assets/image/home/lxs.jpg')
+      }
+
+      function closeModal() {
+        $('#QrcodeModel').addClass('hide')
+      }
+    </script>
   </body>
 </html>

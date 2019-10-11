@@ -139,11 +139,36 @@
 
 .textbook .-img {
     display: inline-block;
-    margin-right: 72px;
+    margin-right: 170px;
 }
 
 .textbook .-imgTwo {
-    margin: 55px auto 0;
+    margin: 90px auto 0;
+}
+
+.textServe .-item-div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 170px;
+}
+.textServe .-item-div .-img {
+    margin: 0 auto;
+}
+
+.textServe .-item-div .-p-1 {
+    margin-top: 45px;
+    font-size:30px;
+    font-weight:bold;
+    color:rgba(82,82,82,1);
+}
+.textServe .-item-div .-p-2 {
+    margin-top: 24px;
+    width:252px;
+    height: 200px;
+    font-size:18px;
+    font-weight:bold;
+    color:rgba(153,153,153,1);
+    line-height:30px;
 }
 
 .sk {

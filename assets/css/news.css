@@ -61,6 +61,7 @@
 }
 .news-btn {
   color: #ffc000;
+  cursor: pointer;
   font-size: 16px;
 }
 

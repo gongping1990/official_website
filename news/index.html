@@ -89,13 +89,13 @@
       for (var i = 0; i < dataList.length; i++) {
         var obj = dataList[i]
         htmlTemplate += "<div class='news-item clearfix'>" +
-          "<div class='news-cover fl'><img src="+ obj.img+" alt=''/></div>" +
+          "<div class='news-cover fl'><img src=" + obj.img + " alt=''/></div>" +
           "<div class='news-info fl'>" +
-          "<p class='news-title'>"+obj.title+"</p>" +
-          "<div class='news-subtitle'><span>"+obj.describe+"</span></div>" +
+          "<p class='news-title'>" + obj.title + "</p>" +
+          "<div class='news-subtitle'><span>" + obj.describe + "</span></div>" +
           "<div class='news-text clearfix'>" +
-          "<span class='news-date fl'>"+obj.createTime+"</span>" +
-          "<a class='news-btn fr' href='www.baidu.com' target='_blank'>查看详情></a>" +
+          "<span class='news-date fl'>" + obj.createTime + "</span>" +
+          "<a class='news-btn fr' href=" + obj.href + " target='_blank'>查看详情></a>" +
           "</div>" +
           "</div>" +
           "</div>"

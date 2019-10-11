@@ -1,9 +1,16 @@
 .banner {
-  width: 100%;
+  position: relative;
+  height: 690px;
+  min-width: 1200px;
+  overflow: hidden;
 }
 
 .banner img {
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .content-item {

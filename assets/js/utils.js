@@ -12,5 +12,7 @@ function isMobile() {
   return false
 }
 
-if (isMobile) {
+if (isMobile()) {
+  var url = 'http://m.lexiaoshi.cn';
+  window.location.href = url + window.location.pathname
 }

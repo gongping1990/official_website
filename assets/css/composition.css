@@ -101,6 +101,11 @@
   vertical-align: middle;
 }
 
+.iconMar {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 .icon1 {
   background-image: url('../image/home/1.png');
 }

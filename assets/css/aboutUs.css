@@ -20,6 +20,7 @@
 }
 
 .-content-center .-center-left .-center-left-nav {
+    display: block;
     margin-bottom: 52px;
     cursor: pointer;
     font-size: 20px;

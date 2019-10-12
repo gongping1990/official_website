@@ -1,6 +1,28 @@
 .p-franchisee {
     position: relative;
 }
+
+.p-franchisee .banner {
+    position: relative;
+    min-width: -1200px;
+    height: 690px;
+    overflow: hidden;
+}
+
+.p-franchisee .banner .img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.p-franchisee .banner .-btn {
+    position: absolute;
+    top: 454px;
+    right: 197px;
+}
+
 .p-franchisee-img {
     width: 100%;
 }
@@ -19,11 +41,6 @@
     border-radius:57px;
 }
 
-.-top {
-    position: absolute;
-    top: 536px;
-    left: 397px;
-}
 
 .-down {
     position: absolute;

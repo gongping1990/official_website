@@ -153,6 +153,55 @@ header {
   border-radius: 10px;
 }
 
+.windowText {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width:100%;
+  height:90px;
+  background:rgba(16,15,15, 0.85);
+}
+.windowText .-div {
+  position: relative;
+  text-align: center;
+  line-height: 90px;
+}
+
+.windowText .-img {
+  display: inline-block;
+  transform: translateY(-127px);
+  /*position: absolute;*/
+  /*top: -127px;*/
+  width: 238px;
+}
+
+.windowText .-text {
+  transform: translateY(-52px);
+  display: inline-block;
+  margin-left: 29px;
+  font-size:30px;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+
+.windowText .-btn {
+  transform: translateY(-52px);
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 48px;
+  text-align: center;
+  width:170px;
+  height:50px;
+  background:rgba(247,52,52,1);
+  border-radius:25px;
+  font-size:24px;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height: 50px;
+}
+
+
 .hide {
   display: none;
 }
@@ -176,16 +225,13 @@ header {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/tanchuang.png");
   margin: auto;
-  width: 251px;
-  height: 359px;
+  width:467px;
+  height:455px;
 }
 
-.study-popup .study-popup-bg .-img {
-  width: 230px;
-  margin-top: 116px;
-  margin-left: 10px;
+.study-popup .study-popup-bg .-img{
+  width: 151px;
 }
 
 .-title {

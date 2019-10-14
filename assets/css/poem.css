@@ -15,6 +15,7 @@
 
 .banner .-btn {
   position: absolute;
+  cursor: pointer;
   left: 456px;
   bottom: 114px;
   text-align: center;
@@ -208,6 +209,8 @@
 .fk {
   position: relative;
   height: 1362px;
+  min-width: 1200px;
+  overflow: hidden;
 }
 
 .fk img {

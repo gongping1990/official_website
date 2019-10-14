@@ -15,6 +15,7 @@
 
 .banner .-btn {
   position: absolute;
+  cursor: pointer;
   right: 419px;
   bottom: 129px;
   text-align: center;

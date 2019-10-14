@@ -46,7 +46,7 @@
       <div class="banner">
         <div class="img">
           <img src="../assets/image/poem/banner.png" />
-          <div class="-btn" onclick="openModel()">立即报名</div>
+          <div class="-btn" onclick="openModel(1)">立即报名</div>
         </div>
         
       </div>
@@ -208,7 +208,7 @@
             </div>
           </li>
         </ul>
-        <div class="lesson-btn" onclick="openModel()">报名查看更多课程</div>
+        <div class="lesson-btn" onclick="openModel(1)">报名查看更多课程</div>
       </div>
       <div class="textbook min-1120">
         <p class="-title">
@@ -280,7 +280,13 @@
         </div>
       </div>
     </footer>
-
+    <div class="windowText">
+      <div class="-div w-1200">
+        <img class="-img" src="../assets/image/home/rw.png">
+        <p class="-text">聪明妈妈给孩子的第一堂大语文课</p>
+        <div class="-btn" onclick="openModel(2)">立即报名</div>
+      </div>
+    </div>
     <div id="QrcodeModel" class="study-popup hide" onclick="closeModal()">
       <div class="study-popup-bg">
         <img class="-img" id="modalImg" src="" />
@@ -292,9 +298,21 @@
     <script src="../assets/js/bootstrap.js"></script>
   <script>
 
-    function openModel() {
+    function openModel(type) {
       $('#QrcodeModel').removeClass('hide')
-      $('#modalImg').attr('src', '../assets/image/home/gsw.jpg')
+
+      switch (+type) {
+        case 1:
+          $('#modalImg').attr('src', '../assets/image/home/gsw.jpg')
+          $('#modalImg').css({'marginLeft':'156px','marginTop':'212px'})
+          $('.study-popup-bg').css({'background':"url(../assets/image/poem/tc.png)",'backgroundSize':'100%'})
+          break
+        case 2:
+          $('#modalImg').attr('src', '../assets/image/home/lxs.jpg')
+          $('#modalImg').css({'marginLeft':'260px','marginTop':'203px'})
+          $('.study-popup-bg').css({'background':"url(../assets/image/composition/tc.png)",'backgroundSize':'100%'})
+          break
+      }
     }
 
     function closeModal() {

@@ -296,6 +296,14 @@
       </div>
     </footer>
 
+    <div class="windowText">
+      <div class="-div w-1200">
+        <img class="-img" src="../assets/image/home/rw.png">
+        <p class="-text">聪明妈妈给孩子的第一堂大语文课</p>
+        <div class="-btn" onclick="openModel()">立即报名</div>
+      </div>
+    </div>
+
     <div id="QrcodeModel" class="study-popup hide" onclick="closeModal()">
       <div class="study-popup-bg">
         <img class="-img" id="modalImg" src="" />
@@ -309,6 +317,8 @@
       function openModel() {
         $('#QrcodeModel').removeClass('hide')
         $('#modalImg').attr('src', '../assets/image/home/lxs.jpg')
+        $('#modalImg').css({'marginLeft':'260px','marginTop':'203px'})
+        $('.study-popup-bg').css({'background':"url(../assets/image/composition/tc.png)",'backgroundSize':'100%'})
       }
 
       function closeModal() {

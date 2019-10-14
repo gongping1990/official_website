@@ -16,6 +16,7 @@
 }
 
 .news-item {
+  cursor: pointer;
   margin-bottom: 19px;
   background: #FBFCFE;
 }

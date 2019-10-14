@@ -33,7 +33,7 @@
 <body>
 <header>
   <div class="nav clearfix w-1200">
-    <img class="logo" src="../assets/image/home/logo.png"/>
+    <a href="/" ><img class="logo" src="../assets/image/home/logo.png" /></a>
     <div class="nav-list">
       <a href="/" class="nav-item">首页</a>
       <a href="/composition" class="nav-item">同步轻作文</a>
@@ -74,6 +74,7 @@
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="../assets/js/bootstrap.js"></script>
 <script>
+  var dataList = ''
   $.ajax({
     async: false,//同步，异步
     url: "http://huoke.test.k12.vip/compositionv2/officenews/pageByNews", //请求的服务端地址
@@ -86,10 +87,10 @@
     success: function (data) {
       var params = JSON.parse(data)
       var htmlTemplate = ''
-      var dataList = params.resultData.records;
+      dataList = params.resultData.records;
       for (var i = 0; i < dataList.length; i++) {
         var obj = dataList[i]
-        htmlTemplate += "<div class='news-item clearfix'>" +
+        htmlTemplate += "<div class='news-item clearfix' onclick='openWindowNews("+i+")'>" +
           "<div class='news-cover fl'><img src=" + obj.img + " alt=''/></div>" +
           "<div class='news-info fl'>" +
           "<p class='news-title'>" + obj.title + "</p>" +
@@ -108,6 +109,14 @@
       alert('error'); //错误的处理
     }
   });
+
+  function openWindowNews(index) {
+    for (var i = 0; i < dataList.length; i++) {
+      if (index === i) {
+        window.open(dataList[i].href,'_blank');
+      }
+    }
+  }
 </script>
 </body>
 </html>

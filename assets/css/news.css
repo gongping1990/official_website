@@ -1,13 +1,8 @@
 .banner {
-  position: relative;
-  height: 340px;
+
 }
 
 .banner img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
   width: 100%;
 }
 .news-list {
@@ -22,6 +17,7 @@
 
 .news-item {
   margin-bottom: 19px;
+  background: #FBFCFE;
 }
 
 .news-cover {

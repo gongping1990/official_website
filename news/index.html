@@ -90,7 +90,7 @@
       dataList = params.resultData.records;
       for (var i = 0; i < dataList.length; i++) {
         var obj = dataList[i]
-        htmlTemplate += "<div class='news-item clearfix' onclick='openWindowNews("+i+")'>" +
+        htmlTemplate += "<div class='news-item clearfix' onclick='openWindowNews("+JSON.stringify(obj)+")'>" +
           "<div class='news-cover fl'><img src=" + obj.img + " alt=''/></div>" +
           "<div class='news-info fl'>" +
           "<p class='news-title'>" + obj.title + "</p>" +
@@ -110,12 +110,8 @@
     }
   });
 
-  function openWindowNews(index) {
-    for (var i = 0; i < dataList.length; i++) {
-      if (index === i) {
-        window.open(dataList[i].href,'_blank');
-      }
-    }
+  function openWindowNews(data) {
+    window.open(data.href,'_blank');
   }
 </script>
 </body>

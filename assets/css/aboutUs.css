@@ -58,6 +58,7 @@
 
 .-content-center .-center-right .-center-right-img {
     transform: translateY(-67px);
+    width: 60%;
 }
 
 .-content-center .-center-right .-center-right-smallTitle {
